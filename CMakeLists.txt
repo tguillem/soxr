@@ -142,6 +142,8 @@ if (WITH_AVFFT OR (CMAKE_SYSTEM_PROCESSOR MATCHES "^arm" AND SIMD32_FOUND AND WI
   endif ()
 endif ()
 
+string(REPLACE ";" " " LIBS_PRIVATE_PC "${LIBS}")
+
 check_function_exists (lrint HAVE_LRINT)
 check_include_files (fenv.h HAVE_FENV_H)
 check_include_files (stdbool.h HAVE_STDBOOL_H)

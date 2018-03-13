@@ -2,4 +2,5 @@ Name: ${LSR}
 Description: ${DESCRIPTION_SUMMARY} (with libsamplerate-like bindings)
 Version: ${PROJECT_VERSION}
 Libs: -L${LIB_INSTALL_DIR} -l${LSR}
+Libs.private: ${LIBS_PRIVATE_PC}
 Cflags: -I${INCLUDE_INSTALL_DIR}
