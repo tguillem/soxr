@@ -12,7 +12,6 @@ if (DEFINED SIMD32_C_FLAGS)
 elseif (CMAKE_SYSTEM_PROCESSOR MATCHES "^arm")
   set (TRIAL_C_FLAGS
     # Gcc
-    "-mfpu=neon-vfpv4 -mcpu=cortex-a7"
     "-mfpu=neon       -mfloat-abi=hard"
     "-mfpu=neon       -mfloat-abi=softfp"
     "-mfpu=neon       -mfloat-abi=soft"
